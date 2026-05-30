@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Arcade | Categories & Trending</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="hero-section">
+        <div class="hero-content">
+            <h1>Velo Arcade</h1>
+            <p class="subtitle">Level Up Your Retro Experience</p>
+        </div>
+    </div>
+
+    <div class="section-title">🔥 Popular Hits (Gen Z Choice)</div>
+    <div class="popular-grid">
+
+        <div class="pop-card" onclick="playGame('psx', 'games/psx/sfa2g.bin')">
+            <img src="https://m.media-amazon.com/images/M/MV5BNGZhMWYyZWYtY2Y0Yi00Yzg3LWFlMjMtZWQzNjM2MTRiNTFlXkEyXkFqcGc@._V1_.jpg"
+                alt="Street Fighter Alpha 2 Gold">
+            <div class="pop-details">
+                <h3>SF Alpha 2 Gold</h3>
+                <span>PSX FIGHT CORE</span>
+            </div>
+        </div>
+
+        <div class="pop-card" onclick="playGame('psx', 'games/streetfighters/tkof.gba')">
+            <img src="https://wallpapercave.com/wp/wp7984084.jpg" alt="Bloody Roar 2">
+            <div class="pop-details">
+                <h3>The King Of Fighters</h3>
+                <span>BEAST MODE FIGHT</span>
+            </div>
+        </div>
+
+        <div class="pop-card" onclick="playGame('psx', 'games/tekken/Tekken 3 (Europe) (Track 1).bin')">
+            <img src="https://i.ytimg.com/vi/N3YAwyC5Wc0/maxresdefault.jpg" alt="Pepsiman">
+            <div class="pop-details">
+                <h3>Tekken 3</h3>
+                <span>PSX CORE</span>
+            </div>
+        </div>
+
+        <div class="pop-card" onclick="playGame('psx', 'games/streetfighters/Marvel Super Heroes vs. Street Fighter (Europe).bin')">
+            <img src="https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000077523/1a42108b5573691b59d9f4d4cb8b36fb6e86ddabaad8f06d180195aeb4607e43" alt="Capcom vs SNK">
+            <div class="pop-details">
+                <h3>Marvel vs Capcom</h3>
+                <span>ARCADE CROSSOVER</span>
+            </div>
+        </div>
+
+    </div>
+    <div id="emulator-popup">
+        <div id="emulator-box">
+            <button class="close-btn" onclick="closeGame()">❌ QUIT</button>
+            <div id="game-player"></div>
+        </div>
+    </div>
+    <div class="search-container">
+        <input type="text" id="gameSearch" class="search-bar" onkeyup="filterGames()"
+            placeholder="⚡ Search your favorite game/series...">
+    </div>
+
+    <div class="section-title">📁 Explore Full Series</div>
+    <div class="category-container" id="categoryContainer">
+
+        <a href="streetfighter.html" class="category-card">
+            <div class="category-image-bg">
+                <img src="https://wallpapercave.com/wp/wp3009719.jpg" alt="Street Fighter">
+            </div>
+            <div class="category-info">
+                <h2>STREET FIGHTER</h2>
+                <p>7 Games Available</p>
+            </div>
+        </a>
+
+        <a href="tekken.html" class="category-card">
+            <div class="category-image-bg">
+                <img src="https://c4.wallpaperflare.com/wallpaper/234/719/610/tekken-7-wallpaper-preview.jpg"
+                    alt="Tekken Series">
+            </div>
+            <div class="category-info">
+                <h2>TEKKEN SERIES</h2>
+                <p>3 Games Available</p>
+            </div>
+        </a>
+
+        <a href="mortal.html" class="category-card">
+            <div class="category-image-bg">
+                <img src="https://images.hdqwalls.com/wallpapers/2023-mortal-kombat-1-4k-4t.jpg"
+                    alt="Mortal Kombat Series">
+            </div>
+            <div class="category-info">
+                <h2>MORTAL KOMBAT SERIES</h2>
+                <p>1 Games Available</p>
+            </div>
+        </a>
+    </div>
+
+
+    <script src="./app.js"></script>
+
+</body>
+
+</html>

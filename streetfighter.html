@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Street Fighter Collection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <a href="index.html" class="back-btn">⬅ HOME</a>
+
+    <h1>STREET FIGHTER SERIES</h1>
+
+    <div class="grid-container">
+        <div class="game-div" onclick="playGame('psx', 'games/psx/sfa2g.bin')">
+            <img src="https://m.media-amazon.com/images/M/MV5BNGZhMWYyZWYtY2Y0Yi00Yzg3LWFlMjMtZWQzNjM2MTRiNTFlXkEyXkFqcGc@._V1_.jpg"
+                alt="Street Fighter Alpha 2 Gold ">
+            <div class="div-details">
+                <h3>Street Fighter Alpha 2 Gold </h3>
+                <span>PSX 3D CORE</span>
+            </div>
+        </div>
+
+        <div class="game-div" onclick="playGame('gba', 'games/streetfighters/sf3.gba')">
+            <img src="https://wallpapercave.com/wp/wp10644557.jpg" alt="Street Fighter Alpha 3">
+            <div class="div-details">
+                <h3>Street Fighter Alpha 3</h3>
+                <span>GBA CORE</span>
+            </div>
+        </div>
+
+        <div class="game-div" onclick="playGame('gba', 'games/streetfighters/ssf2.gba')">
+            <img src="https://cdn.wallpapersafari.com/35/15/xAYp3j.jpg" alt="Street Fighter Alpha 3">
+            <div class="div-details">
+                <h3>Super Street Fighter II</h3>
+                <span>GBA CORE</span>
+            </div>
+        </div>
+
+        <div class="game-div" onclick="playGame('gba', 'games/streetfighters/tkof.gba')">
+            <img src="https://wallpapercave.com/wp/wp7984084.jpg" alt="Street Fighter Alpha 3">
+            <div class="div-details">
+                <h3>The King Of Fighters</h3>
+                <span>GBA CORE</span>
+            </div>
+        </div>
+
+        <div class="game-div" onclick="playGame('segaMD', 'games/streetfighters/sf2_sega.md')">
+            <img src="https://w0.peakpx.com/wallpaper/787/58/HD-wallpaper-street-fighter-ii-blanka-chun-li-dhalsim-e-honda-guile-ken-masters-m-bison-ryu-vega-zangief.jpg"
+                alt="Street Fighter II SEGA">
+            <div class="div-details">
+                <h3>Street Fighter II: Champion Edition</h3>
+                <span>SEGA CORE</span>
+            </div>
+        </div>
+        <div class="game-div"
+            onclick="playGame('psx', 'games/streetfighters/Marvel Super Heroes vs. Street Fighter (Europe).bin')">
+            <img src="https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/store/software/switch/70010000077523/1a42108b5573691b59d9f4d4cb8b36fb6e86ddabaad8f06d180195aeb4607e43"
+                alt="Marvel vs Capcom">
+            <div class="div-details">
+                <h3>Marvel vs Capcom</h3>
+                <span>PSX 3D CORE</span>
+            </div>
+        </div>
+
+        <div class="game-div" onclick="playGame('psx', 'games/streetfighters/Capcom vs. SNK Pro (USA).bin')">
+            <img src="https://cdn.wallpapersafari.com/98/82/dkMfnW.jpg" alt="Marvel vs Capcom">
+            <div class="div-details">
+                <h3>Capcom vs. SNK</h3>
+                <span>PSX 3D CORE</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="emulator-popup">
+        <div id="emulator-box">
+            <button class="close-btn" onclick="closeGame()">❌ QUIT</button>
+            <div id="game-player"></div>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>

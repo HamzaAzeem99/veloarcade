@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tekken Series Collection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <a href="index.html" class="back-btn">⬅ HOME</a>
+
+    <h1>TEKKEN SERIES</h1>
+
+    <div class="grid-container">
+
+        <div class="game-div" onclick="playGame('gba', 'games/tekken/tk1.gba')">
+            <img src="https://img.asmedia.epimg.net/resizer/v2/LR3G2AS2FVASZORWKHPV7AEWXU.jpg?auth=68c0844c7570f1f8e025eb5100b3b5c05e07d83bd48a7d57e5d855be1490f056&width=1472&height=1104&smart=true"
+                alt="Tekken I">
+            <div class="div-details">
+                <h3>Tekken 1</h3>
+                <span>GBA CORE</span>
+            </div>
+        </div>
+
+        <div class="game-div" onclick="playGame('gba', 'games/tekken/tk2.gba')">
+            <img src="https://cdn.wikimg.net/en/strategywiki/images/8/8a/Tekken_2_boxart.jpg" alt="Tekken II">
+            <div class="div-details">
+                <h3>Tekken 2</h3>
+                <span>SNES CORE</span>
+            </div>
+        </div>
+        <div class="game-div" onclick="playGame('psx', 'games/tekken/Tekken 3 (Europe) (Track 1).bin')">
+            <img src="https://i.ytimg.com/vi/N3YAwyC5Wc0/maxresdefault.jpg"
+                alt="Tekken 3">
+            <div class="div-details">
+                <h3>Tekken 3</h3>
+                <span>PSX FULL AUDIO CORE</span>
+            </div>
+        </div>
+    </div>
+
+    <div id="emulator-popup">
+        <div id="emulator-box">
+            <button class="close-btn" onclick="closeGame()">❌ QUIT</button>
+            <div id="game-player"></div>
+        </div>
+    </div>
+
+<script src="./app.js"></script>
+
+</body>
+
+</html>
